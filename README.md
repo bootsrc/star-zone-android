@@ -1,5 +1,6 @@
 # 星座空间(star-zone）
 
+## 简介
 关于星座的社交App
 操作系统：Android
 兼容Android4.4.0 - 8.1.0
@@ -8,11 +9,16 @@ Java后台代码在
 
 [https://github.com/liushaoming/star-zone](https://github.com/liushaoming/star-zone)
 
-效果图
+## 效果图
 * logo
+
+<br/>
 ![](/doc/image/ic_custom_app.png)
 
+<br/>
 * 界面
+<br/>
+
 ![](/doc/image/poster-1.png)
 
 ![](/doc/image/poster-2.png)
