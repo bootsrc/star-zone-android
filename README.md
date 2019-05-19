@@ -32,7 +32,7 @@ Java后台代码在
 
 <br/>
 
-**开发者需要注意**
+## 开发主要事项
 技术通讯使用了小米推送MiPush和腾讯免费的短信服务。
 大家如果真的需要使用这些功能，需要自己去相关的官网上去注册小米开发者账号和腾讯云账号
 获取相应的appid和key填入到<code>com.appjishu.starzone.constant.MiSdkConstant</code>
