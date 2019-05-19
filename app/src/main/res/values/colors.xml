@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_transparent">#960000ff</color>
+    <!--<color name="alpha_3">#3000</color>-->
+    <color name="alpha_3">#EFEFF4</color>
+    <color name="block_divider_color">#EFEFF4</color>
+    <color name="line_divider_color">#F3F3F3</color>
+    <color name="gray_3">#666666</color>
+    <color name="divider">#dddddd</color>
+    <color name="alpha_1">#1000</color>
+
+    //////////////////////////////////////cnod style
+    <color name="color_primary">#ff333333</color>
+    <color name="color_primary_dark">#ff222222</color>
+    <color name="color_accent">#ff80bd01</color>
+
+    <color name="window_background_light">#ffeeeeee</color>
+    <color name="window_background_dark">#ff303030</color>
+    <color name="list_divider_light">#ffe0e0e0</color>
+    <color name="list_divider_dark">#ff666666</color>
+
+    <color name="translucent_status">#66000000</color>
+
+    <color name="text_primary_light">#de000000</color>
+    <color name="text_primary_dark">#ffffffff</color>
+    <color name="text_primary_disabled_light">#39000000</color>
+    <color name="text_primary_disabled_dark">#4dffffff</color>
+    <color name="text_secondary_light">#8a000000</color>
+    <color name="text_secondary_dark">#b3ffffff</color>
+    <color name="text_secondary_disabled_light">#24000000</color>
+    <color name="text_secondary_disabled_dark">#36ffffff</color>
+
+    <color name="widget_background_light">@android:color/white</color>
+    <color name="widget_background_checked_light">#ffeeeeee</color>
+    <color name="widget_background_dark">#ff3c3c3c</color>
+    <color name="widget_background_checked_dark">#ff444444</color>
+    //////////////////////////////////////cnod style
+    //// styles from zblibrary
+    <color name="activity_bg">#f7f8f8</color>
+    <color name="custom_blue">#2196F3</color>
+    <color name="light_red">#f39121</color>
+
+    /// beautiful style
+    <color name="beautiful_btn_green">#00D661</color>
+    <color name="beautiful_header_blue">#0292FE</color>
+    <color name="beautiful_text_color_in_transparent_background">#2596FE</color>
+</resources>

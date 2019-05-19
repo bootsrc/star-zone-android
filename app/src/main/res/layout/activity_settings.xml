@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SettingsActivity">
+
+    <ScrollView style="@style/match_match"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:background="@color/block_divider_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:id="@+id/llSettingAppSettingContainer"
+                style="@style/ll_vertical_match_wrap" >
+
+                <View style="@style/divider_block_horizontal_1px"
+                    android:layout_height="6dp"/>
+
+                <LinearLayout
+                    android:id="@+id/register_and_change_password_linear_layout"
+                    style="@style/content_item_white">
+                    <ImageView
+                        style="@style/content_item_lf_tv"
+                        android:src="@drawable/ic_account_circle_green_24dp" />
+
+                    <TextView
+                        style="@style/content_item_lf_tv"
+                        android:layout_weight="1"
+                        android:text="@string/action_register_and_change_password" />
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_line_horizontal_1px"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/sign_out_linear_layout"
+                    style="@style/content_item_white" >
+                    <ImageView
+                        style="@style/content_item_lf_tv"
+                        android:src="@drawable/ic_power_settings_blue_24dp" />
+
+                    <TextView
+                        style="@style/content_item_lf_tv"
+                        android:layout_weight="1"
+                        android:text="@string/sign_out_title" />
+                </LinearLayout>
+
+                <View style="@style/divider_block_horizontal_1px"
+                    android:layout_height="6dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <razerdp.github.com.ui.widget.common.TitleBar
+        android:id="@id/title_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.appjishu.starzone"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
+
+        if (isModule.toBoolean()) {
+            buildConfigField 'boolean', 'isModule', 'true'
+        } else {
+            buildConfigField 'boolean', 'isModule', 'false'
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //jni
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            jni.srcDirs = [] //disable automatic ndk-build call
+        }
+
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'io.reactivex:rxjava:1.1.5'
+    implementation 'io.reactivex:rxandroid:1.2.0'
+    //图片选择模块尚未完成，所以暂时不需要分开依赖
+    if (!isModule.toBoolean()) {
+        implementation project(':circle_base_library')
+        implementation project(':circle_base_ui')
+        implementation project(':circle_photoselect')
+        implementation project(':circle_publish')
+        annotationProcessor rootProject.ext.dependencies.arouter_compiler
+
+    } else {
+        implementation project(':circle_base_library')
+        implementation project(':circle_base_ui')
+        implementation project(':circle_common')
+    }
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'pub.devrel:easypermissions:0.3.0'
+    implementation files('libs/MiPush_SDK_Client_3_6_9.jar')
+
+    implementation 'com.jacktuotuo.customview:verificationcodeview:1.0.4'
+}

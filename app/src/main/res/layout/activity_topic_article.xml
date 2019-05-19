@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/activity_page">
+
+    <LinearLayout
+        style="@style/ll_vertical_match_match"
+        android:paddingTop="@dimen/action_bar_height">
+
+        <RelativeLayout
+            style="@style/match_match"
+            android:layout_weight="1">
+
+            <ScrollView style="@style/match_match">
+
+                <LinearLayout style="@style/ll_vertical_match_match">
+
+                    <com.appjishu.starzone.ui.widget.imageview.RoundImageView
+                        android:id="@+id/topic_image_view"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="15dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <View style="@style/divider_horizontal_1px" />
+
+                    <TextView
+                        android:id="@+id/topic_title_textview"
+                        style="@style/text_big_black"
+                        android:layout_marginBottom="30dp" />
+
+                    <View style="@style/divider_horizontal_1px" />
+
+                    <TextView
+                        android:id="@+id/topic_content_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <razerdp.github.com.ui.widget.common.TitleBar
+        android:id="@id/title_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

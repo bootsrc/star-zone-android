@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">星座空间</string>
+    <string name="this_app_name">星座空间</string>
+    <string name="app_version_star_zone">1.0</string>
+    <string name="register_guide">非常感谢您关注本项目\n本项目意在仿出一个微信朋友圈，后台采用Bmob服务器，代码开源并托管在github\n(https://github.com/razerdp/FriendCircle)\n为了更方便您的测试，您可以在本Popup进行注册以改变本地测试用户，如果不注册，则默认以开发者帐号来进行测试。\n测试可以随便填写，目前也没有打算登录，仅仅是用来更改本地测试用户信息而已，请放心使用。</string>
+    <string name="title_activity_main">首页</string>
+
+    <string name="title_home">首页</string>
+    <string name="title_find">发现</string>
+    <string name="title_msg">消息</string>
+    <string name="title_mine">我</string>
+
+    //
+    <string name="star_character_title">十二星座</string>
+    <string name="topic_article_activity_title">话题内容</string>
+    <string name="topic_list_activity_title">话题</string>
+    <string name="chinese_zodiac_title">十二生肖资料</string>
+    <string name="home_topic_title">话题</string>
+    <string name="home_share_title">分享</string>
+    <string name="star_character_detail_title">星座性格</string>
+    <string name="about_activity_title">关于</string>
+
+    <string name="developer_lable">开发者</string>
+    <string name="developer_value">刘少明 liushaoming</string>
+    <string name="website_lable">官网</string>
+    <string name="website_value">appjishu.com</string>
+    <string name="contact_email">邮箱(长按复制)</string>
+    <string name="contact_wechat">微信(长按复制)</string>
+    <string name="contact_wechat_value">shaoming5213</string>
+    <string name="about_wechat">微信</string>
+    <string name="about_wechat_value">星座空间(复制,打开微信搜索)</string>
+    <string name="about_copy_info">以下信息可以长按复制</string>
+    <string name="email_value">liushaomingdev@163.com</string>
+    <string name="donate_title">打赏程序员的辛苦劳动</string>
+    <string name="donate_community">打赏社区建设</string>
+    <string name="donate_title_bottom">点击二维码保存到相册，打开支付宝-扫一扫-打开相册识别，打赏开发者</string>
+    <string name="home_donate_title_bottom">点击二维码保存到相册，打开支付宝-扫一扫-打开相册识别，打赏本App。</string>
+    <string name="why_donate_btn_text">为什么需要打赏</string>
+    <string name="upgrade_app_text">升级</string>
+
+    <string name="friends_circle_title">朋友圈</string>
+    <!-- Strings related to login -->
+    <string name="prompt_phone">手机号</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_register_password">密码(大于5位字符)</string>
+    <string name="prompt_captcha">验证码</string>
+    <string name="action_sign_in">登录/注册</string>
+    <string name="action_register">注册</string>
+    <string name="action_forget_password">忘记密码？</string>
+    <string name="action_register_and_change_password">去注册/修改密码</string>
+    <string name="action_change_password">修改密码</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="action_register_short">注册</string>
+    <string name="error_invalid_phone">手机格式不正确</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_invalid_captcha">验证码为6位</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">不能为空</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_reset_password">重置密码</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="captcha_btn_text">获取验证码</string>
+    <string name="login_status_view_title">未登录</string>
+    <string name="edit_profile_btn_title">编辑资料</string>
+    <string name="user_profile_title">用户资料</string>
+    <string name="click_login_view_title">点击头像注册/修改密码</string>
+    <string name="title_activity_star_match">星座配对</string>
+    <string name="profile_sex_lable">性别</string>
+    <string name="profile_male_txt">男</string>
+    <string name="profile_female_txt">女</string>
+    <string name="submit_title">提交</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="goto_settings_label">设置</string>
+    <string name="sign_out_title">退出登录</string>
+    <string name="login_activity_title">登录</string>
+    <string name="login_btn_text">登录</string>
+    <string name="register_activity_title">注册</string>
+    <string name="add_profile_activity_title">用户资料</string>
+    <string name="nickname_hint">昵称</string>
+    <string name="age_label">年龄</string>
+    <string name="age_hint">年龄（岁）</string>
+    <string name="my_head_text">编辑头像</string>
+
+    <string name="moment_activity_title">朋友圈</string>
+    <string name="post_moment_button_text">发表</string>
+    <string name="post_moment_activity_title">发表</string>
+    <string name="about_share_btn_text">分享</string>
+    <string name="test_entry_text">测试</string>
+    <string name="test_activity_title">测试</string>
+    <string name="select_gif_activity_title">Gif</string>
+    <string name="chat_window_activity_title">聊天</string>
+
+    <!--MiPush start-->
+    <string name="set_alias">设置别名</string>
+    <string name="unset_alias">撤销别名</string>
+    <string name="set_account">设置帐号</string>
+    <string name="unset_account">撤销帐号</string>
+    <string name="subscribe_topic">订阅标签</string>
+    <string name="unsubscribe_topic">撤销标签</string>
+    <string name="set_accept_time">设置时间</string>
+    <string name="pause_push">暂停推送</string>
+    <string name="resume_push">恢复推送</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="register_success">Register push success.</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="recv_passthrough_message"> Receive a passthrough message. Content is \"%1$s\"</string>
+    <string name="click_notification_message"> Clicked a notification message. Content is \"%1$s\"</string>
+    <string name="arrive_notification_message"> Arrived a notification message. Content is \"%1$s\"</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="set_account_success"> Set account \"%1$s\" success.</string>
+    <string name="set_account_fail"> Set account fail for %1$s.</string>
+    <string name="unset_account_success"> Unset account \"%1$s\" success.</string>
+    <string name="unset_account_fail"> Unset account fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+    <!--MiPush end-->
+
+    <string name="chat_activity_title">聊天</string>
+    <string name="send">发送</string>
+    <string name="send_text_hint">输入内容&#8901;	&#8901;	&#8901;</string>
+    <string name="topic_title_str">话题</string>
+    <string name="friend_title_str">通讯录</string>
+    <string name="chat_msg_title_str">聊天消息</string>
+
+    <string name="nickname_label">昵称</string>
+    <string name="star_label">星座</string>
+    <string name="close_title">关闭</string>
+
+    <string name="goto_check_in_btn_label">签到</string>
+    <string name="check_in_activity_title">签到</string>
+    <string name="already_checked_in">今日已签到</string>
+    <string name="score_activity_title">积分</string>
+    <string name="score_label">积分</string>
+    <string name="check_in_count_lable">签到次数</string>
+    <string name="my_star_label">我</string>
+    <string name="his_star_label">对方</string>
+    <string name="query_label">查询</string>
+    <string name="match_activity_title">星座匹配</string>
+    <string name="goto_check_in_btn_mine_label">签到领积分！</string>
+
+    <string name="title_activity_campaign">最新活动</string>
+    <string name="slogan_text">有趣的星座社区</string>
+    <string name="about_app_entry_title">关于App</string>
+    <string name="title_activity_about_app">关于App</string>
+    <string name="title_get_captcha">获取验证码</string>
+    <string name="label_mobile">手机</string>
+    <string name="title_close">关闭</string>
+</resources>

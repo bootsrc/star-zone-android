@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/activity_page"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.StarCharacterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/action_bar_height">
+
+        <GridView
+            android:id="@+id/gridview_star"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:numColumns="4"
+            android:layout_marginTop="50dp"
+            android:verticalSpacing="10dp" />
+    </LinearLayout>
+
+    <razerdp.github.com.ui.widget.common.TitleBar
+        android:id="@id/title_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

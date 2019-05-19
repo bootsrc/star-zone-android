@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_base_library/circle_base_library.iml" filepath="$PROJECT_DIR$/circle_base_library/circle_base_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_base_ui/circle_base_ui.iml" filepath="$PROJECT_DIR$/circle_base_ui/circle_base_ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_common/circle_common.iml" filepath="$PROJECT_DIR$/circle_common/circle_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_photoselect/circle_photoselect.iml" filepath="$PROJECT_DIR$/circle_photoselect/circle_photoselect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_photoview/circle_photoview.iml" filepath="$PROJECT_DIR$/circle_photoview/circle_photoview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circle_publish/circle_publish.iml" filepath="$PROJECT_DIR$/circle_publish/circle_publish.iml" />
+      <module fileurl="file://$PROJECT_DIR$/star-zone-android.iml" filepath="$PROJECT_DIR$/star-zone-android.iml" />
+    </modules>
+  </component>
+</project>

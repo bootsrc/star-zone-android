@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_page"
+    tools:context=".activity.ChatWindowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/action_bar_height"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/match_match"
+            android:layout_weight="1" >
+            <ScrollView style="@style/match_match" >
+                <LinearLayout style="@style/ll_vertical_match_match" >
+
+                    <TextView
+                        android:id="@+id/chat_window_log"
+                       android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:maxLines="7"
+                        android:minLines="3"
+                        android:layout_marginBottom="30dp" />
+
+                    <View style="@style/divider_horizontal_1px" />
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <razerdp.github.com.ui.widget.common.TitleBar
+        android:id="@id/title_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

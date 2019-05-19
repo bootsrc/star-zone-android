@@ -1,0 +1,236 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Transparent" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Transparent_FullScreen" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="AppTheme.FUllScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="divider">
+        <item name="android:background">@color/alpha_3</item>
+    </style>
+
+    <style name="divider_block">
+        <item name="android:background">@color/block_divider_color</item>
+    </style>
+
+    <style name="divider_line">
+        <item name="android:background">@color/line_divider_color</item>
+    </style>
+
+    <style name="divider_transparent">
+        <item name="android:background">@color/blue_transparent</item>
+    </style>
+
+    <style name="divider_horizontal_1px" parent="divider">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="divider_block_horizontal_1px" parent="divider_block">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="divider_line_horizontal_1px" parent="divider_line">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="divider_horizontal_transparent_1px" parent="divider_transparent">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="content_item_white" parent="content_item">
+        <item name="android:background">@drawable/white_to_gray</item>
+    </style>
+
+    <style name="content_item">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">@dimen/content_item_left_tv_padding_left</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/to_alpha</item>
+    </style>
+
+    <!-- padding<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_huge">15dp</dimen>
+    <dimen name="padding_big">9dp</dimen>
+    <dimen name="padding_middle">6dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_micro">2dp</dimen>
+
+    <!-- padding>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <style name="content_item_rt_img" parent="text_middle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/padding_micro</item>
+        <item name="android:src">@drawable/forward2_light</item>
+    </style>
+
+    <style name="content_item_rt_img_custom" parent="text_middle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/padding_micro</item>
+        <item name="android:src">@drawable/ic_keyboard_arrow_right_gray_24dp</item>
+    </style>
+
+    <style name="text_middle" parent="text">
+        <item name="android:textSize">@dimen/text_size_middle</item>
+    </style>
+
+    <style name="text" parent="wrap_wrap">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray_3</item>
+    </style>
+
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_match">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="content_item_lf_tv" parent="text_middle">
+        <item name="android:paddingRight">@dimen/padding_big</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="BaseAppDialogDark" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:listDivider">@color/list_divider_dark</item>
+        <item name="widgetBackground">@color/widget_background_dark</item>
+        <item name="widgetBackgroundDark">@color/widget_background_checked_dark</item>
+        <item name="widgetBackgroundTitle">@color/color_primary</item>
+    </style>
+
+    <!-- App Dialog Light -->
+
+    <style name="BaseAppDialogLight" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:listDivider">@color/list_divider_light</item>
+        <item name="widgetBackground">@color/widget_background_light</item>
+        <item name="widgetBackgroundDark">@color/widget_background_checked_light</item>
+        <item name="widgetBackgroundTitle">@android:color/white</item>
+    </style>
+
+    <style name="AppDialogLight" parent="BaseAppDialogLight" />
+
+    <style name="AppDialogDark" parent="BaseAppDialogDark" />
+
+    <style name="AppDialogDark.Progress">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppDialogLight.Progress">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    /// bzlibrary
+
+    <style name="activity_page">
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/activity_bg</item>
+        <item name="android:orientation">vertical</item>
+        <!-- 状态栏沉浸 <<<<<<<<<<<<<<<<< -->
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!-- 状态栏沉浸 >>>>>>>>>>>>>>>>> -->
+    </style>
+
+    <style name="ll_vertical_match_wrap" parent="match_wrap">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ll_vertical_match_match" parent="match_match">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="text_big" parent="text">
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+    <style name="text_big_black" parent="text_big">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="content_item_rt_tv" parent="text_middle">
+        <item name="android:paddingLeft">@dimen/padding_big</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    ////bzlibrary
+
+    <style name="MiAppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="PermissionDialog" parent="MiAppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="BeautifulButtonTransparent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/beautiful_text_color_in_transparent_background</item>
+    </style>
+</resources>

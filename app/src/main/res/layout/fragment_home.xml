@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/ll_vertical_match_match"
+        android:background="@color/block_divider_color"
+        android:paddingBottom="@dimen/bottom_navigation_height">
+
+        <View
+            style="@style/divider_block_horizontal_1px"
+            android:layout_height="6dp" />
+
+        <LinearLayout
+            android:id="@+id/carousel_layout"
+            style="@style/content_item_white"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/carousel_view"
+                style="@style/content_item_lf_tv"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/color_accent"
+                android:textSize="@dimen/text_size_micro"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/divider_block_horizontal_1px"
+            android:layout_height="6dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/function_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            style="@style/divider_block_horizontal_1px"
+            android:layout_height="6dp" />
+
+        <LinearLayout style="@style/content_item_white"
+            android:layout_height="30dp">
+
+            <TextView
+                style="@style/content_item_lf_tv"
+                android:layout_weight="1"
+                android:text="@string/topic_title_str" />
+
+        </LinearLayout>
+
+        <View
+            style="@style/divider_line_horizontal_1px"
+            android:layout_height="2dp" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/topic_swipe_refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/topic_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

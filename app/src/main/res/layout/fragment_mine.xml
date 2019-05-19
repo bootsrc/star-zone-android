@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/block_divider_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/bottom_navigation_height">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/item_distance">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="40dp"
+                        android:orientation="vertical">
+
+                        <com.appjishu.starzone.ui.widget.imageview.RoundImageView
+                            android:id="@+id/mine_head_image_view"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_person_blue_1_24dp" />
+
+                        <TextView
+                            android:id="@+id/login_status_view"
+                            android:layout_width="200dp"
+                            android:layout_height="25dp"
+
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="@string/login_status_view_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/edit_profile_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="@string/edit_profile_btn_title"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/login_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@android:color/white"
+                            android:gravity="center"
+                            android:text="@string/action_sign_in"
+                            android:textSize="@dimen/text_size_small" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="40dp"
+                        android:gravity="start"
+                        android:text="@string/score_label" />
+
+                    <TextView
+                        android:id="@+id/score_field"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:gravity="start"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:gravity="start"
+                        android:text="@string/check_in_count_lable" />
+
+                    <TextView
+                        android:id="@+id/check_in_count_field"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:gravity="start"
+                        android:textColor="@android:color/holo_red_light" />
+
+                    <Button
+                        android:id="@+id/goto_check_in_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/shape_button_blue"
+                        android:text="@string/goto_check_in_btn_mine_label"
+                        android:textSize="@dimen/text_size_micro" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_block_horizontal_1px"
+                    android:layout_height="6dp" />
+
+                <LinearLayout
+                    android:id="@+id/llSettingAbout"
+                    style="@style/content_item_white"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <ImageView
+                        style="@style/content_item_lf_tv"
+                        android:src="@drawable/ic_info_green_24dp" />
+
+                    <TextView
+                        style="@style/content_item_lf_tv"
+                        android:layout_weight="1"
+                        android:text="@string/about_activity_title" />
+
+                    <ImageView style="@style/content_item_rt_img_custom" />
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_line_horizontal_1px"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/upgrade_app_linear_layout"
+                    style="@style/content_item_white"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <ImageView
+                        style="@style/content_item_lf_tv"
+                        android:src="@drawable/ic_system_update_blue_24dp" />
+
+                    <TextView
+                        style="@style/content_item_lf_tv"
+                        android:layout_weight="1"
+                        android:text="@string/upgrade_app_text" />
+
+                    <ImageView style="@style/content_item_rt_img_custom" />
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_line_horizontal_1px"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/mine_share_linear_layout"
+                    style="@style/content_item_white"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <ImageView
+                        style="@style/content_item_lf_tv"
+                        android:src="@drawable/ic_screen_share_24dp" />
+
+                    <TextView
+                        style="@style/content_item_lf_tv"
+                        android:layout_weight="1"
+                        android:text="@string/home_share_title" />
+
+                    <ImageView style="@style/content_item_rt_img_custom" />
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_line_horizontal_1px"
+                    android:layout_height="2dp" />
+
+                <LinearLayout
+                    android:id="@+id/setting_layout"
+                    style="@style/content_item_white"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <ImageView
+                        style="@style/content_item_lf_tv"
+                        android:src="@drawable/ic_settings_blue_24dp" />
+
+                    <TextView
+                        style="@style/content_item_lf_tv"
+                        android:layout_weight="1"
+                        android:text="@string/goto_settings_label" />
+
+                    <ImageView style="@style/content_item_rt_img_custom" />
+                </LinearLayout>
+
+                <View
+                    style="@style/divider_block_horizontal_1px"
+                    android:layout_height="6dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel_fg_mine"
+        android:layout_width="@dimen/progress_wheel_site"
+        android:layout_height="@dimen/progress_wheel_site"
+        android:layout_gravity="center"
+        app:matProg_barColor="@color/color_accent"
+        app:matProg_barWidth="4dp"
+        app:matProg_fillRadius="true"
+        app:matProg_progressIndeterminate="true" />
+</FrameLayout>

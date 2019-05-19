@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="110dp"
+    android:layout_height="65dp"
+    android:orientation="vertical">
+
+    <com.appjishu.starzone.ui.widget.imageview.RoundedConerImageView
+        android:id="@+id/function_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:src="@drawable/ic_person_blue_1_24dp"
+        app:radius="5dp"/>
+
+    <TextView
+        android:id="@+id/function_text"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_micro" />
+
+</LinearLayout>

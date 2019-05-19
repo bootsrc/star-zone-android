@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_page"
+    tools:context=".activity.SignItemActivity">
+
+    <LinearLayout style="@style/ll_vertical_match_match"
+        android:paddingTop="@dimen/action_bar_height">
+
+        <RelativeLayout
+            style="@style/match_match"
+            android:layout_weight="1">
+
+            <ScrollView style="@style/match_match">
+
+                <include layout="@layout/content_sign_item" />
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <razerdp.github.com.ui.widget.common.TitleBar
+        android:id="@id/title_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>
