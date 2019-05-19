@@ -22,9 +22,15 @@ Java后台代码在
 
 ![](/doc/image/poster-1.png)
 
+<br/>
+
 ![](/doc/image/poster-2.png)
 
+<br/>
+
 ![](/doc/image/poster-3.png)
+
+<br/>
 
 **开发者需要注意**
 技术通讯使用了小米推送MiPush和腾讯免费的短信服务。
