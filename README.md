@@ -4,9 +4,7 @@
 操作系统：Android
 兼容Android4.4.0 - 8.1.0
 
-//
-颜色
+Java后台代码在
 
-blue #FF2196F3
-red  
+[https://github.com/liushaoming/star-zone](https://github.com/liushaoming/star-zone)
 
